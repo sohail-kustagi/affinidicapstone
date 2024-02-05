@@ -1,0 +1,84 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: rgb(109, 196, 185);
+    border-bottom: 1px solid rgb(230, 237, 238);
+    border-radius: 15px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  
+  .Header h1 {
+    margin: 10;
+    color: #141313;
+    font-size: 28px;
+    font-style: inherit;
+    padding-left: 30px;
+    width: 100%;
+  }
+
+  .Header a {
+    text-decoration: rgb(241, 231, 217);
+  }
+
+  .Header nav {
+    display: flex;
+    align-items: right;
+  }
+  .Header div span {
+    margin-right: 10px;
+    color: #333;
+    font-size: 26px;
+    font-style: inherit;
+    align-items: center;
+  }
+  
+  .Header .CartIcon {
+    margin-left: 10px;
+    padding-right: 20px;
+  }
+
+  .CartIcon img {
+    height: 40px; 
+    width: auto;
+    cursor: pointer;
+  }
+
+  .Header button {
+    padding: 6px 12px; 
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 4px; 
+    background-color: rgb(72, 57, 155);
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .Header {
+    flex-direction: column; 
+    align-items: flex-start;
+    }
+
+  .Header h1,
+  .Header div,
+  .Header .CartIcon {
+    width: 100%; 
+    justify-content: space-between; 
+    padding: 10px 0; 
+  }
+
+  .Header div {
+    order: 2; 
+  }
+  
+  .Header .CartIcon {
+    order: 3;
+  }
+  
+    .Header div span {
+      font-size: 16px;
+    }
+  }
+  
